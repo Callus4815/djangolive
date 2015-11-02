@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from jokes import views as jokes_views
+from django.contrib.auth import views
+
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^home/', jokes_views.IndexView.as_view(), name='home'),
+    url(r'^$', views.login, {'template_name': 'index.html'}, name="login"),
+
 ]
