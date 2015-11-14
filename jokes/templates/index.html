@@ -1,4 +1,6 @@
+{% load staticfiles %}
 <!DOCTYPE html>
+
 <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <head>
 	<title>Keith Calise</title>
@@ -18,7 +20,7 @@
     	border-radius: 50%;
     }
     p {
-    	font-size: 42px;
+    	font-size: 35px;
     }
     input {
     	border: 0;
@@ -29,15 +31,18 @@
       background: red;
       color: white;
     }
+	 .img-responsive{
+	    height: auto;
+	    width: 30%
+	 }
     
   
 
  </style>
 </head>
-<body>
-  <img src="https://avatars2.githubusercontent.com/u/11893297?v=3&s=460">
+<p>
+  <img class="img-responsive" src="{% static 'MeandRocky.jpg' %}">
   <h1>Keith Calise</h1>
   <p>Hello, Im a web developer</p><p>for hire say hello</p>
-  <input type="email" placeholder="Your Email">
-  <input type="submit">
+  <p><a href="mailto:keithcalise@gmail.com">Send Me an Email</a></p>
 </body>
