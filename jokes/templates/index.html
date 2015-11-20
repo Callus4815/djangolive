@@ -1,48 +1,67 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 
-<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-<head>
-	<title>Keith Calise</title>
- <style>
-    body {
-  	  text-align: center;
-  	  background: url("http://www.luc.edu/media/sitebackgrounds/cas-computer-science.jpg");
-  	  background-size: cover;
-  	  background-position: center;
-  	  color: black;
-  	  font-family: Lobster, helvetica;
-    }
-    .rocky {
-    	border-color: black;
-    	border-width: 5px;
-    	border-style: solid;
-    	border-radius: 50%;
-    }
-    p {
-    	font-size: 35px;
-    }
-    input {
-    	border: 0;
-    	padding: 10px;
-    	font-size: 18px;
-    }
-    input[type="submit"]{
-      background: red;
-      color: white;
-    }
-	 .img-responsive{
-	    height: auto;
-	    width: 30%
-	 }
-    
-  
 
- </style>
+<!doctype html>
+<html>
+<head>
+    <title>Hello World</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<p>
-  <img class="img-responsive" src="{% static 'MeandRocky.jpg' %}">
-  <h1>Keith Calise</h1>
-  <p>Hello, Im a web developer</p><p>for hire say hello</p>
-  <p><a href="mailto:keithcalise@gmail.com">Send Me an Email</a></p>
+<body>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/FG0fTKAqZ5g" frameborder="0" allowfullscreen align="right"></iframe>
+  <h1>Welcome to the "Hello World" Page<h1/><br/>
+  <h2>A few facts about this world....</h2><br/><br  />
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/600px-The_Earth_seen_from_Apollo_17.jpg" width="300"/>
+
+  <p>Earth (also the world[n 5], in Greek: Γαῖα Gaia,[n 6] or in Latin: Terra[26]) is the third planet from the Sun, the densest planet in the Solar System, the largest of the Solar System's four terrestrial planets, and the only astronomical object known to harbor life. The earliest life on Earth arose at least 3.5 billion years ago.[27][28][29] Earlier physical evidences of life include graphite, a biogenic substance, in 3.7 billion-year-old metasedimentary rocks discovered in southwestern Greenland,[30] as well as, "remains of biotic life" found in 4.1 billion-year-old rocks in Western Australia.[31][32]</p>
+
+  <hr/>
+
+  <h3>About the Earth</h3>
+    <ul>
+      <li><em>Mean radius</em> - 6371.0 km[6]</li>
+      <li><strong>Equatorial radius</strong> - 6378.1 km[7][8]</li>
+      <li><strike>Polar radius</strike> - 6356.8 km[9]</li>
+      <li>Flattening - 0.0033528[10]-1/298.257222101 (ETRS89)</li>
+      <li>Circumference - 40075.017 km (equatorial) [8]-40007.86 km (meridional) [11][12]</li>
+      <li><a href="https://en.wikipedia.org/wiki/Earth">Learn More</a>
+    </ul>
+
+  <hr />
+  <h3>Top 3 facts about the World</h3>
+
+  <ol>
+    <li>The earths rotation is gradually slowing</li>
+    <li>A year isn't exactly 365 days, and it doesnt take 24 hours for the earth to rotate.</li>
+    <li>We will all be dead eventually</li>
+  </ol>
+
+  <hr/>
+  <h3>Earths Closest Neighbor</h3>
+    <table>
+      <tr><th>Name</th><th>Radius</th><th>Average Temperature</th></tr>
+      <tr><td>Mars</td><td>3,390km</td><td>-55&deg;C</td>
+      <tr><td>Venus</td><td>6,052km</td><td>460&deg;C</td>
+
+    </table>  
+  <hr/>
+
+  <p>Want to know more....?</p>
+  
+  <form action="https://www.google.com">
+  
+    <input type="submit" value="Click Here"/>
+
+  </form>    
+
+
+
 </body>
+</html>
+

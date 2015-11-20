@@ -7,3 +7,7 @@ def home(request):
 	
 	template = 'index.html'
 	return render(request, template)
+
+def another(request):
+	template = 'another.html'
+	return render(request, template)
