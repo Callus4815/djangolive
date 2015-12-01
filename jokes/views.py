@@ -9,5 +9,5 @@ def home(request):
 	return render(request, template)
 
 def another(request):
-	template = 'another.html'
+	template = 'cssdemo.html'
 	return render(request, template)

@@ -76,7 +76,7 @@ body{
     font-weight: bold;
     font-size: 0.9em;
     padding-left: 4px;
-    background-image: url("images/magnify.png");
+    background-image: url("/static/magnify.png");
     background-repeat: no-repeat;
     background-size: 40px;
     background-position: right center;
@@ -120,18 +120,74 @@ body{
     padding-left: 10px;
 }
 #topicmenu{
+    margin: 0;
+    padding-top: 15px;
+    text-align: center;
 
 }
 
 #topicmenu ul{
-    background-color: #4F4D4D; \
+    background-color: #4F4D4D; 
+    padding: 5px 0 0 5px; 
+    margin: 0px;
+    height: 20px;
+
     
 
 }
 #topicmenu li{
     list-style: none;
     font-size: .8em;
-    padding: 4.5px;    
+    border-right: 1px solid black;
+    float: left;
+    background-color: none;
+    padding: 0 10px 0 10px;
+
+
+   
+
+}
+a{
+text-decoration: none 
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+.selected{
+    background-color: #EDEDED;
+    color: #666666;
+    height: 18px;
+    position: relative;
+    top: -4px;
+    padding-top: 4px !important;
+}
+
+#content{
+        width: 100%;
+        padding: 5px;
+        color: gray;
+        font-size: .9em;
+        font-family: arial,verdana,helvetica;
+    }
+.date{
+    font-weight: bold;
+}
+h1{
+    color:#1167A8;
+    font-size: 2.5em;
+}
+.headlineimage{
+    float: left;
+}
+.newsitem{
+    position: relative;
+    top: -15px;
+    left: 10px;
+    width: 200px;
+    float: left;
 
 }
 </style>
@@ -142,10 +198,10 @@ body{
     <div id="topbar">
         <div class="fixed-width">
             <div id="logodiv">
-                <img height="30px" src="images/BBClogo.png"/>
+                <img height="30px" src="/static/BBClogo.png"/>
             </div>
             <div id="signindiv">
-                <img height="20px" src="images/signin.png">Sign In
+                <img height="20px" src="/static/signin.png">Sign In
             </div>
             <div id="topmenudiv">
                 <ul>
@@ -168,19 +224,45 @@ body{
     <div id="newsbar">
         <div class="fixed-width">
             <p id="newsheader">NEWS<span id="uk">UK</span></p>
-        </div>
+        
         <div id="rss">
             RSS<img height="15px" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmM7gE17HSIsGWb9EjMRaU64TmHYdRJ2Q_7mv2yGeKHsQB9S3--JaC15pM"/>
         </div>
     <div class="break"></div>
-    <div id="topicmenu">
-        <ul>
-            <li>Home</li>
-        </ul>
-    </div>
-</div>
-    </div>
+            <div id="topicmenu">
+                <ul>
+                    <li>Home</li>
+                    <li>Video</li>
+                    <li>World</li>
+                    <li>US & Canada</li>
+                    <li class="selected">UK</li>
+                    <li>Business</li>
+                    <li>Tech</li>
+                    <li>Science</li>
+                    <li>Magazine</li>
+                    <li>Entertainment & Arts</li>
+                    <li>Health</li>
+                    <li style="border-right: none">More</li>
+                </ul> 
+            </div>
+        </div>
+    <div class="break"></div>
+   
+    <div id="content">
+        <div class="fixed-width">
+            <p><span class="date">25 November 2015</span> Last Updated at 15:23</p><br/>
+
+            <h1>BBC to take over the world...</h1>
+
+            <img class="headlineimage" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-53x92cmQYIOgcwO9br-2qjc9QKoHYtqtmpx-6cpgkAz389W4OA"/>
+            <div class="newsitem">
+                <p>If you need a robust software application that is web-accessible and want to work with a company that can handle your unique.</p>
+            </div>
+            
+        </div>
+    
     </div>
 </div>
 </body>
 </html>
+
