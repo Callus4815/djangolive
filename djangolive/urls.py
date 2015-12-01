@@ -22,7 +22,8 @@ from django.contrib.auth import views
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'jokes.views.home', name='home'),
-    url(r'^cssdemo$', 'jokes.views.another', name='another'),
+    url(r'^cssdemo$', 'jokes.views.css', name='css'),
+    url(r'^javascript_demo$', 'jokes.views.javascript', name='javascript')
 
     
 

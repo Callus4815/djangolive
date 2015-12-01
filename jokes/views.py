@@ -8,6 +8,10 @@ def home(request):
 	template = 'index.html'
 	return render(request, template)
 
-def another(request):
+def css(request):
 	template = 'cssdemo.html'
+	return render(request, template)
+
+def javascript(request):
+	template = 'javascript_demo.html'
 	return render(request, template)
