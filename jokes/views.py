@@ -15,3 +15,7 @@ def css(request):
 def javascript(request):
 	template = 'javascript_demo.html'
 	return render(request, template)
+
+def jquery(request):
+	template = 'jquery_demo.html'
+	return render(request, template)

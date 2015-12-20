@@ -52,17 +52,28 @@ function getRandomColor() {
 
  	}
 
- 	document.getElementById("box").onclick=function(){
+ 		document.getElementById("box").onclick=function(){
  		
- 		clickedTime=Date.now();
+ 			clickedTime=Date.now();
 
- 		reactionTime=(clickedTime-createdTime)/1000;
+ 			reactionTime=(clickedTime-createdTime)/1000;
 
  		document.getElementById("time").innerHTML=reactionTime;
  		
- 		this.style.display="none";
+ 			this.style.display="none";
 
  		makeBox();
  	}
+
+ 	
+ 	var array = [];
+	$('span').each(function () {
+    array.push(this.innerHTML);
+});
+	console.log(array)
+
+ 	
+
+ 	
 
  	makeBox();
